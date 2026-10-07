@@ -8,7 +8,7 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Password;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-
+use App\Http\Controllers\MahasiswaController;
 
 
 
@@ -60,7 +60,7 @@ Route::get('/dashboard', function (Request $request) {
 })->middleware('auth')->name('dashboard');
 
 // Dashboard Admin
-Route::get('/admindashboard', function () {
+Route::get('/admin/dashboard', function () {
     if (session('role') !== 'admin') {
         abort(403, 'Akses khusus Admin.');
     }
@@ -137,6 +137,11 @@ Route::post('/reset-password', function (Request $request) {
 })->middleware('guest')->name('password.update');
 
 
-Route::get('/mahasiswa/admin', function () {
-    return view('admin.mahasiswa.mahasiswa');
-});
+use App\Models\Mahasiswa;
+
+Route::get('/mahasiswa/admin', [MahasiswaController::class, 'index'])
+    ->middleware('auth')
+    ->name('admin.mahasiswa');
+
+Route::get('/{id}/edit',[MahasiswaController::class, 'edit'])->name('admin.mahasiswa.edit');
+Route::put('/{id}/update',[MahasiswaController::class, 'update'])->name('admin.mahasiswa.update');
