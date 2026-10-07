@@ -1,58 +1,101 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Griya Bintang Quran
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Informasi Griya Bintang Quran merupakan aplikasi berbasis web yang dikembangkan untuk membantu proses pengelolaan data mahasiswa/siswa, guru, absensi, tagihan, pembayaran, dan laporan secara terintegrasi.
 
-## About Laravel
+Sistem ini memiliki sistem autentikasi dan hak akses berdasarkan role pengguna, yaitu **Admin, Guru, dan Siswa/Mahasiswa**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 👥 Anggota Kelompok
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+| No | Nama | Role |
+|----|------|------|
+| 1 | Farrel Athallah | Group Leader / Scrum Master |
+| 2 | Sugiwindarto | Development Team |
+| 3 | Salman Alfarizi| Development Team |
+| 4 | Briliant Dahsyat Anugrah | Development Team |
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📌 Deskripsi Proyek
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Griya Bintang Quran adalah sistem informasi yang dirancang untuk mempermudah pengelolaan administrasi dan kegiatan akademik di Griya Bintang Quran.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Sistem ini menyediakan beberapa fitur utama seperti:
 
-## Agentic Development
+- Registrasi dan login pengguna
+- Hak akses berdasarkan role
+- Pengelolaan data mahasiswa/siswa
+- Pengelolaan data guru
+- Pengelolaan absensi
+- Pengelolaan tagihan
+- Pengelolaan pembayaran
+- Pembuatan laporan
+- Pengelolaan profil pengguna
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Dengan adanya sistem ini, proses pengelolaan data dapat dilakukan secara lebih terstruktur dan terintegrasi.
 
-```bash
-composer require laravel/boost --dev
+---
 
-php artisan boost:install
-```
+## 🎯 Tujuan
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Tujuan dari pengembangan sistem ini adalah:
 
-## Contributing
+1. Mempermudah pengelolaan data mahasiswa/siswa.
+2. Mempermudah pengelolaan data guru.
+3. Membantu proses pencatatan absensi.
+4. Membantu pengelolaan tagihan dan pembayaran.
+5. Menyediakan informasi yang lebih terstruktur bagi Admin, Guru, dan Siswa.
+6. Mengurangi proses administrasi yang masih dilakukan secara manual.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 👤 Role Pengguna
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Admin
 
-## Security Vulnerabilities
+Admin memiliki akses untuk mengelola data utama sistem, seperti:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Dashboard
+- Data Mahasiswa/Siswa
+- Data Guru
+- Absensi
+- Tagihan
+- Pembayaran
+- Laporan
 
-## License
+### Guru
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Guru dapat menggunakan sistem untuk:
+
+- Melihat dashboard
+- Mengelola/melihat data mahasiswa
+- Mengelola absensi
+- Melihat informasi yang berkaitan dengan kegiatan pembelajaran
+
+### Siswa/Mahasiswa
+
+Siswa/Mahasiswa dapat:
+
+- Melihat dashboard
+- Melihat data absensi
+- Melihat tagihan
+- Melihat status pembayaran
+- Mengelola profil
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+| Teknologi | Keterangan |
+|-----------|------------|
+| Laravel | Framework backend |
+| PHP | Bahasa pemrograman |
+| MySQL | Database |
+| Tailwind CSS | Styling dan UI |
+| Bootstrap | Komponen pada beberapa halaman |
+| JavaScript | Interaksi pada halaman |
+| Git & GitHub | Version control |
+
+---
+
