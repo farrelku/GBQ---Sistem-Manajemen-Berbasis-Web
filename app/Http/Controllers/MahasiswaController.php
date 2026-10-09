@@ -11,7 +11,7 @@ class MahasiswaController extends Controller
     {
         $search = $request->input('search');
 
-        $mahasiswa = Mahasiswa::with('user')          // ⬅️ relasi user tetap dipanggil
+        $mahasiswa = Mahasiswa::with('user')          
             ->when($search, function ($query, $search) {
                 $query->where(function ($q) use ($search) {
                     $q->where('nama', 'like', '%' . $search . '%')
